@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --background: black;
+  --header-background: black;
+  --text-primary: white;
+  --text-secondary: #aaa;
+  --font-size: 59px;
+  --digit-width: 38px;
+  --non-digit-width: 12px;
+  --digit-height: 74px;
+  --line-height: 100%;
+  --font-weight: 700;
+  background-color: black
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #909090;
+  background-clip: content-box;
+}
+
+#odo1a,
+#odo2a,
+#odo3a,
+#odo4a,
+#odo5a,
+#odo6a,
+#odo7a,
+#odo8a,
+#odo9a,
+#c     {
+  font-family: "Roboto Black";
+  font-size: var(--font-size);
+  display: block;
+  /*width: var(--digit-width);*/
+  /*height: var(--digit-height);*/
+  /*line-height: var(--line-height);*/
+  font-weight: var(--font-weight);
+}
+
+#comma1a,
+#comma2a {
+  font-family: "Roboto";
+  font-size: 53px;
+  display: inline-block;
+  vertical-align: middle;
+  width: var(--non-digit-width);
+  height: var(--digit-height) - 5px;
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+}
+
+#odo2a,
+#odo3a,
+#odo4a,
+#odo5a,
+#odo6a,
+#odo7a,
+#odo8a,
+#odo9a,
+#comma1a,
+#comma2a {
+  display: none;
+}
+
+#avatar {
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  width: 100px;
+  height: 100px;
+}
+
+#title {
+  position: absolute;
+  width: 100%;
+  height: 19px;
+  left: 110px;
+  top: 1px;
+  text-align: left;
+  font-family: "ITC Avant Garde Gothic", sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: 100;
+  color: white;
+}
+
+.count-area {
+  position: top;
+  width: 100%;
+  height: 0%;
+}
+
+#count {
+  position: absolute;
+  top: 23px;
+  left: 110px;
+  text-align: right;
+  margin-right: 0;
+  font-family: Roboto Black;
+  font-weight 600;
+  color: white;
+}
